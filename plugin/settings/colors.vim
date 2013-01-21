@@ -8,7 +8,8 @@
 "
 
 if has("user_commands")
-  colorscheme solarized
+  ""colorscheme solarized
+  colorscheme zenburn
   set background=dark
 endif
 

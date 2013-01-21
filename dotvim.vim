@@ -24,7 +24,8 @@ set ruler               " line and column number of the cursor position
 set wildmenu            " enhanced command completion
 set visualbell          " use visual bell instead of beeping
 set laststatus=2        " always show the status lines
-set list listchars=tab:→\ ,trail:▸
+set list listchars=tab:→\ ,trail:▸,extends:>,nbsp:_
+"set listchars=tab:>-,trail:.,extends:>,nbsp:_
 set cursorline
 set clipboard=unnamed
 
@@ -48,9 +49,10 @@ set cinoptions=:0,(s,u0,U1,g0,t0 " some indentation options ':h cinoptions' for 
 set modelines=5         " number of lines to check for vim: directives at the start/end of file
 set autoindent          " automatically indent new line
 
-set ts=4                " number of spaces in a tab
-set sw=4                " number of spaces for indent
-set et                  " expand tabs into spaces
+set tabstop=4           " number of spaces in a tab
+set shiftwidth=4        " number of spaces for indent
+set expandtab           " expand tabs into spaces
+
 
 " mouse settings
 if has("mouse")
@@ -114,4 +116,5 @@ if has("user_commands")
     let VundleInstalled=1
   endif
 endif
+
 

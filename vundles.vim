@@ -14,25 +14,33 @@ Bundle 'gmarik/vundle'
 " General
 if count(g:vundles, 'general')
   Bundle 'scrooloose/nerdtree'
-  Bundle 'altercation/vim-colors-solarized'
-  Bundle 'spf13/vim-colors'
+  "Bundle 'altercation/vim-colors-solarized'
+  "Bundle 'spf13/vim-colors'
   Bundle 'tpope/vim-surround'
   Bundle 'AutoClose'
   Bundle 'kien/ctrlp.vim'
   Bundle 'vim-scripts/sessionman.vim'
   Bundle 'matchit.zip'
-  Bundle 'Lokaltog/vim-powerline'
+  " needs python2 "Bundle 'Lokaltog/vim-powerline'
   Bundle 'Lokaltog/vim-easymotion'
   Bundle 'jistr/vim-nerdtree-tabs'
-  Bundle 'flazz/vim-colorschemes'
+  "Bundle 'flazz/vim-colorschemes'
   Bundle 'corntrace/bufexplorer'
-  Bundle 'kien/ctrlp.vim'
+  "Bundle 'kien/ctrlp.vim'
   Bundle 'austintaylor/vim-indentobject'
   Bundle 'SearchComplete'
   Bundle 'Zenburn'
   Bundle 'sudo.vim'
   Bundle 'bronson/vim-trailing-whitespace'
   Bundle 'tpope/vim-fugitive'
+  " Nice way to show diffs in vim
+  Bundle 'DirDiff.vim'
+  Bundle 'mileszs/ack.vim'
+  " Allows justification of text with \aj etc
+  Bundle 'TextFormat'
+  " highlight tasklist
+  Bundle 'TaskList.vim'
+
 endif
 
 " General Programming
@@ -46,7 +54,8 @@ if count(g:vundles, 'programming')
   endif
   if v:version > 700
     Bundle 'Shougo/neocomplcache'
-    Bundle 'Shougo/neocomplcache-snippets-complete'
+    ""Bundle 'Shougo/neocomplcache-snippets-complete'
+    Bundle 'Shougo/neosnippet'
     Bundle 'Indent-Guides'
   endif
 endif
@@ -59,7 +68,7 @@ endif
 " Python
 if count(g:vundles, 'python')
   " Pick either python-mode or pyflakes & pydoc
-  Bundle 'klen/python-mode'
+  "needs python for vim "Bundle 'klen/python-mode'
   Bundle 'python.vim'
   Bundle 'python_match.vim'
   Bundle 'pythoncomplete'
