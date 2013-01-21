@@ -18,6 +18,8 @@ if count(g:vundles, 'general')
   "Bundle 'spf13/vim-colors'
   Bundle 'tpope/vim-surround'
   Bundle 'AutoClose'
+  Bundle 'vimwiki'
+  Bundle 'calendar.vim--Matsumoto'
   Bundle 'kien/ctrlp.vim'
   Bundle 'vim-scripts/sessionman.vim'
   Bundle 'matchit.zip'
@@ -40,7 +42,10 @@ if count(g:vundles, 'general')
   Bundle 'TextFormat'
   " highlight tasklist
   Bundle 'TaskList.vim'
-
+  Bundle 'honza/snipmate-snippets'
+  if v:version > 700
+    Bundle 'Shougo/vimproc'
+  endif
 endif
 
 " General Programming
@@ -54,7 +59,6 @@ if count(g:vundles, 'programming')
   endif
   if v:version > 700
     Bundle 'Shougo/neocomplcache'
-    ""Bundle 'Shougo/neocomplcache-snippets-complete'
     Bundle 'Shougo/neosnippet'
     Bundle 'Indent-Guides'
   endif
