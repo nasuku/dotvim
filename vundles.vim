@@ -16,11 +16,11 @@ if count(g:vundles, 'general')
   Bundle 'scrooloose/nerdtree'
   "Bundle 'altercation/vim-colors-solarized'
   "Bundle 'spf13/vim-colors'
-  Bundle 'tpope/vim-surround'
-  Bundle 'AutoClose'
-  Bundle 'vimwiki'
-  Bundle 'calendar.vim--Matsumoto'
-  Bundle 'kien/ctrlp.vim'
+  "Bundle 'tpope/vim-surround'
+  "Bundle 'AutoClose'
+  "Bundle 'vimwiki'
+  "Bundle 'calendar.vim--Matsumoto'
+  "Bundle 'kien/ctrlp.vim'
   Bundle 'vim-scripts/sessionman.vim'
   Bundle 'matchit.zip'
   " needs python2 "Bundle 'Lokaltog/vim-powerline'
@@ -29,11 +29,11 @@ if count(g:vundles, 'general')
   "Bundle 'flazz/vim-colorschemes'
   Bundle 'corntrace/bufexplorer'
   "Bundle 'kien/ctrlp.vim'
-  Bundle 'austintaylor/vim-indentobject'
+  "Bundle 'austintaylor/vim-indentobject'
   Bundle 'SearchComplete'
   Bundle 'Zenburn'
-  Bundle 'sudo.vim'
-  Bundle 'bronson/vim-trailing-whitespace'
+  "Bundle 'sudo.vim'
+  "Bundle 'bronson/vim-trailing-whitespace'
   Bundle 'tpope/vim-fugitive'
   " Nice way to show diffs in vim
   Bundle 'DirDiff.vim'
@@ -42,9 +42,9 @@ if count(g:vundles, 'general')
   Bundle 'TextFormat'
   " highlight tasklist
   Bundle 'TaskList.vim'
-  Bundle 'honza/snipmate-snippets'
+  "Bundle 'honza/snipmate-snippets'
   if v:version > 700
-    Bundle 'Shougo/vimproc'
+    "Bundle 'Shougo/vimproc'
   endif
 endif
 
@@ -53,14 +53,14 @@ if count(g:vundles, 'programming')
   " Pick one of the checksyntax, jslint, or syntastic
   Bundle 'scrooloose/syntastic'
   Bundle 'scrooloose/nerdcommenter'
-  Bundle 'godlygeek/tabular'
+  "Bundle 'godlygeek/tabular'
   if executable('ctags')
     Bundle 'majutsushi/tagbar'
   endif
   if v:version > 700
-    Bundle 'Shougo/neocomplcache'
-    Bundle 'Shougo/neosnippet'
-    Bundle 'Indent-Guides'
+    "Bundle 'Shougo/neocomplcache'
+    "Bundle 'Shougo/neosnippet'
+    "Bundle 'Indent-Guides'
   endif
 endif
 
@@ -73,7 +73,7 @@ endif
 if count(g:vundles, 'python')
   " Pick either python-mode or pyflakes & pydoc
   "needs python for vim "Bundle 'klen/python-mode'
-  Bundle 'python.vim'
+  "conflicts with vimdiff mappings "Bundle 'python.vim'
   Bundle 'python_match.vim'
   Bundle 'pythoncomplete'
 endif

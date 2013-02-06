@@ -8,9 +8,9 @@
 "
 
 if has("user_commands")
-  ""colorscheme solarized
-  colorscheme zenburn
-  set background=dark
+"set background=dark
+"colorscheme zenburn
+let g:zenburn_force_dark_Background = 1
+colorscheme zenburn
+set background=dark
 endif
-
-
